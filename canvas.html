@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call of Duty Map Strategy Planner</title>
+    <link rel="stylesheet" href="cnvStyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Call of Duty Play Maker</h1>
+            <ul id="mapList">
+                <li data-map="subbase.jpg">Sub Base</li>
+                <li data-map="vista.jpg">Vista</li>
+                <li data-map="6-star.jpg">6-Star</li>
+                <li data-map="rio.jpg">Rio</li>
+                <li data-map="karachi.jpg">Karachi</li>
+                <li data-map="invasion.jpg">Invasion</li>
+                <li data-map="highrise.jpg">Highrise</li>
+            </ul>
+            <div class="controls">
+                <button id="clear">Clear</button>
+                <button id="erase">Erase</button>
+                <button id="draw">Draw</button>
+                <label for="colorPicker">Color:</label>
+                <input type="color" id="colorPicker">
+                <label for="sizePicker">Size:</label>
+                <input type="range" id="sizePicker" min="1" max="20" value="5">
+            </div>
+        </div>
+        <div class="canvas-container">
+            <canvas id="imageCanvas"></canvas>
+            <canvas id="drawCanvas"></canvas>
+        </div>
+    </div>
+    <script src="cnvScript.js"></script>
+</body>
+</html>
